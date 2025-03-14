@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import {Link} from 'react-router-dom'
-import profilepic from '../assets/profilepic.png'
+import profilepic from '../assets/images/profilepic.png'
 import AOS from "aos"
 import 'aos/dist/aos.css'
 

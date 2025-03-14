@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { IoMenu } from "react-icons/io5"
 import AOS from "aos";
 import 'aos/dist/aos.css'
+import navbarinfo from '../assets/jsondatas/navbar.json'
 
 export default function Navbarbuttons(props) {
      
@@ -41,6 +42,8 @@ export default function Navbarbuttons(props) {
         }
     },[active,degree])
 
+    const filternav=navbarinfo.filter((data)=> data.id!=4)
+
 
 
   return (
@@ -48,19 +51,14 @@ export default function Navbarbuttons(props) {
      {
         props.type=="desktop" ?  
             <div className="flex flex-row sm:space-x-15 sm:items-center sm:hover:cursor-pointer sm:text-[1rem]">
-                <Link to="/" className="hover:cursor-pointer hover:text-red-800 font-bold py-3 border-solid border-b-[4px] border-white transition-all duration-300 hover:border-red-800">Home</Link>
-                <Link to="" className="hover:cursor-pointer hover:text-red-800 font-bold py-3 border-solid border-b-[4px] border-white transition-all duration-300 hover:border-red-800">About</Link>
-                <Link to="" className="hover:cursor-pointer hover:text-red-800 font-bold py-3 border-solid border-b-[4px] border-white transition-all duration-300 hover:border-red-800">Career Stats</Link>
+                {filternav.map((data,index)=>(<Link key={data.id} to={data.link} className="hover:cursor-pointer hover:text-red-800 font-bold py-3 border-solid border-b-[4px] border-white transition-all duration-300 hover:border-red-800">{data.buttontext}</Link>))}
                 <Link to="" className="hover:cursor-pointer hover:text-red-800 font-bold"><button className="px-[15px] py-[5px] rounded-[7px] bg-red-500 text-white transition-all duration-300 linear hover:bg-red-800">Contact Me</button></Link>
             </div>
             :
             <div>
                 <IoMenu onClick={activate} className={`sm:hidden visible h-[60px] w-[60px] px-3 rounded-[50%] transition:all linear duration-300 hover:bg-red-200 active:bg-red-200 focus:bg-red-200 hover:text-red-900 active:text-red-900 ${degree}` } />
-                <div ref={dropdown} data-aos="slide-left" className={` flex flex-col items-center fixed z-[4] bg-red-100 h-auto w-auto rounded-tl-[15px] rounded-br-[15px] top-[70px] right-[5px] ${visibility}`}>
-                    <Link to="/" onClick={activate} className="hover:cursor-pointer text-center rounded-tl-[15px] w-[200px] active:bg-red-800 active:text-white  py-5   transition-all duration-100 ">Home</Link>
-                    <Link to=""  onClick={activate} className="hover:cursor-pointer text-center w-[200px] active:bg-red-800 active:text-white py-5   transition-all duration-100 ">About</Link>
-                    <Link to=""  onClick={activate} className="hover:cursor-pointer text-center w-[200px] active:bg-red-800  active:text-white  py-5   transition-all duration-100 ">Career Stats</Link>
-                    <Link to="" onClick={activate} className="hover:cursor-pointer text-center w-[200px] rounded-br-[15px] active:bg-red-800 active:text-white py-5   transition-all duration-100 ">Contact Us</Link>
+                <div ref={dropdown} data-aos="slide-left" className={` flex flex-col items-center fixed z-[4] bg-red-100 h-auto w-auto rounded-tl-[15px] rounded-br-[15px] top-[70px] right-[5px] overflow-hidden border-white border-solid border-[3px]  ${visibility}`}>
+                    {navbarinfo.map((data,index)=>(<Link to={data.link} key={data.id} onClick={activate} className="hover:cursor-pointer text-center  w-[200px] active:bg-red-800 active:text-white  py-5   transition-all duration-100 ">{data.buttontext}</Link>))}
                 </div>
             </div>
      }

@@ -1,0 +1,25 @@
+[
+    {
+        "id":1,
+        "buttontext":"Home",
+        "link":"/"
+
+    },
+    {
+        "id":2,
+        "buttontext":"About",
+        "link":""
+
+    },
+    {
+        "id":3,
+        "buttontext":"Career Stats",
+        "link":""
+
+    },
+    {
+        "id":4,
+        "buttontext":"Contact Us",
+        "link":""
+    }
+]
