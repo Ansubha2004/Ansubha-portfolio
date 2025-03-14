@@ -1,0 +1,5 @@
+body,html{
+    overflow-x:hidden;
+    overscroll-behavior:none;
+    position:relative;
+}
