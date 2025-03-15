@@ -42,7 +42,7 @@ export default function Navbarbuttons(props) {
         }
     },[active,degree])
 
-    const filternav=navbarinfo.filter((data)=> data.id!=4)
+    const filternav=navbarinfo.filter((data)=> data.id!=navbarinfo.length)
 
 
 
@@ -51,8 +51,8 @@ export default function Navbarbuttons(props) {
      {
         props.type=="desktop" ?  
             <div className="flex flex-row sm:space-x-15 sm:items-center sm:hover:cursor-pointer sm:text-[1rem]">
-                {filternav.map((data,index)=>(<Link key={data.id} to={data.link} className="hover:cursor-pointer hover:text-red-800 font-bold py-3 border-solid border-b-[4px] border-white transition-all duration-300 hover:border-red-800">{data.buttontext}</Link>))}
-                <Link to="" className="hover:cursor-pointer hover:text-red-800 font-bold"><button className="px-[15px] py-[5px] rounded-[7px] bg-red-500 text-white transition-all duration-300 linear hover:bg-red-800">Contact Me</button></Link>
+                {filternav.map((data,index)=>(<Link key={data.id} to={data.link} className="hover:cursor-pointer hover:text-red-800 font-bold py-3 border-solid border-b-[4px] border-[#FDF6E3] transition-all duration-300 hover:border-red-800">{data.buttontext}</Link>))}
+                <Link to="/contactpage" className="hover:cursor-pointer hover:text-red-800 font-bold"><button className="px-[15px] py-[5px] rounded-[7px] bg-red-500 text-white transition-all duration-300 linear hover:bg-red-800">Contact Me</button></Link>
             </div>
             :
             <div>

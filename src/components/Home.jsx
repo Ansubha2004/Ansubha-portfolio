@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-        <main className="h-screen w-screen font-[poppins] flex sm:flex-row  flex-col sm:justify-around items-center ">
+        <main className="bg-[#FDF6E3] h-screen w-screen font-[poppins] flex sm:flex-row  flex-col sm:justify-around items-center ">
             <div className="h-auto max-w-[50%] " id="content">
                 <p data-aos="fade-down" data-aos-delay="0" className="sm:text-[72px] text-[#132238]   font-[600] sm:leading-[90px]">Hello I'm <br/>ANSUBHA DHAR</p>
                 <br/>
@@ -42,7 +42,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="h-auto rounded-[20px] border-solid border-[3px] border-white transition-all duration-500 hover:border-red-300 active:border-red-300 bg-orange-50  border-box px-[40px]" data-aos="fade" data-aos-delay="1000" id="displaypic">
+            <div className="h-auto rounded-[20px] border-solid border-[3px] border-[#FDF6E3] transition-all duration-500 hover:border-[#fca5a5] active:border-red-300 bg-orange-200  border-box px-[40px]" data-aos="fade" data-aos-delay="1000" id="displaypic">
                 <img className="h-[70vh]"data-aos="zoom-in-up" data-aos-delay="1500" src={profilepic}/>
             </div>
         </main> 

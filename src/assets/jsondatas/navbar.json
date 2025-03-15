@@ -7,19 +7,24 @@
     },
     {
         "id":2,
-        "buttontext":"About",
+        "buttontext":"Professional Stats",
         "link":""
 
     },
     {
         "id":3,
-        "buttontext":"Career Stats",
+        "buttontext":"Education",
         "link":""
 
     },
     {
         "id":4,
-        "buttontext":"Contact Us",
+        "buttontext":"Service",
         "link":""
+    },
+    {
+        "id":5,
+        "buttontext":"Contact Us",
+        "link":"/contactpage"
     }
 ]
