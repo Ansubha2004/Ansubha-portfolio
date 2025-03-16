@@ -3,3 +3,8 @@ body,html{
     overscroll-behavior:none;
     position:relative;
 }
+#root{
+    background-color:#FDF6E3;
+    height:auto;
+    width:100vw;
+}

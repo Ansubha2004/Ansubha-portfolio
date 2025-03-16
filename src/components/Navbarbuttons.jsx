@@ -57,7 +57,7 @@ export default function Navbarbuttons(props) {
             :
             <div>
                 <IoMenu onClick={activate} className={`sm:hidden visible h-[60px] w-[60px] px-3 rounded-[50%] transition:all linear duration-300 hover:bg-red-200 active:bg-red-200 focus:bg-red-200 hover:text-red-900 active:text-red-900 ${degree}` } />
-                <div ref={dropdown} data-aos="slide-left" className={` flex flex-col items-center fixed z-[4] bg-red-100 h-auto w-auto rounded-tl-[15px] rounded-br-[15px] top-[70px] right-[5px] overflow-hidden border-white border-solid border-[3px]  ${visibility}`}>
+                <div ref={dropdown} data-aos="slide-left" className={` flex flex-col items-center fixed z-[4] bg-red-100 h-auto w-auto rounded-tl-[15px] rounded-br-[15px] top-[70px] right-[5px] overflow-hidden   ${visibility}`}>
                     {navbarinfo.map((data,index)=>(<Link to={data.link} key={data.id} onClick={activate} className="hover:cursor-pointer text-center  w-[200px] active:bg-red-800 active:text-white  py-5   transition-all duration-100 ">{data.buttontext}</Link>))}
                 </div>
             </div>

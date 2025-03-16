@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <div className="font-serif ">
-      <div ref={navbar} className="fixed backdrop-blur-lg min-h-[90px] w-screen flex justify-between items-center box-border z-[7] sm:px-[90px] px-[20px]">
+      <div ref={navbar} className="sm:fixed relative backdrop-blur-lg min-h-[90px] w-screen flex justify-between items-center box-border z-[7] sm:px-[90px] px-[20px]">
         <img src={logo} className="sm:h-[53px] sm:w-[193px] h-[50px] "></img>
         <Navbarbuttons type={type} />
       </div>
