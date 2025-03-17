@@ -27,7 +27,7 @@ export default function Home() {
                 <br/>
                 <p className="text-[#556070] text-[18px]   " data-aos="zoom-out-up" data-aos-delay="1000">Hi! I am a passionate Web Developer as well as an undergraduate Electrical Engineer, from the city of Kolkata in West Bengal, India. I am open to collab for any web application projects or Hackathons & also seeking for intership opportunities. </p>
                 <br/>
-                <Link to="" className="hover:cursor-pointer hover:text-red-800 font-bold" ><button data-aos="fade" data-aos-delay="1500" className="px-[20px]  py-[10px]  rounded-[7px] bg-red-500 text-white transition-all duration-300 linear hover:bg-red-800">Say Hello!</button></Link>
+                <Link to="/contactpage" className="hover:cursor-pointer hover:text-red-800 font-bold" ><button data-aos="fade" data-aos-delay="1500" className="px-[20px]  py-[10px]  rounded-[7px] bg-red-500 text-white transition-all duration-300 linear hover:bg-red-800">Say Hello!</button></Link>
                 <br/><br/><br/>
                 <div className="h-[100px] flex text-[16px] text-[#424E60] ">
                     <div className="w-[250px] flex flex-col justify-center items-center  transition-all duration-200 bg-orange-200 mx-[2px] border-[2px] border-white  hover:border-orange-400" data-aos="zoom-in-right" data-aos-delay="3000">

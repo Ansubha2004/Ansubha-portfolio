@@ -3,6 +3,10 @@ import Navbar from './components/Navbar.jsx'
 import Home from './components/Home.jsx'
 import {Route,Routes} from 'react-router-dom'
 import ContactPage from './components/ContactPage.jsx'
+import ProfStats from './components/ProfStats.jsx'
+import Education from './components/Education.jsx'
+import Service from './components/Service.jsx'
+
 
 function App() {
   
@@ -13,6 +17,15 @@ function App() {
       <Routes>
         <Route path="/" element={
           <Home />
+        }/>
+        <Route path="/professionalstats" element={
+          <ProfStats />
+        }/>
+        <Route path="/education" element={
+          <Education />
+        }/>
+        <Route path="/service" element={
+          <Service />
         }/>
         <Route path="/contactpage" element={
           <ContactPage />

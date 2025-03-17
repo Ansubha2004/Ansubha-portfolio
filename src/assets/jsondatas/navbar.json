@@ -8,19 +8,19 @@
     {
         "id":2,
         "buttontext":"Professional Stats",
-        "link":""
+        "link":"/professionalstats"
 
     },
     {
         "id":3,
         "buttontext":"Education",
-        "link":""
+        "link":"/education"
 
     },
     {
         "id":4,
         "buttontext":"Service",
-        "link":""
+        "link":"/service"
     },
     {
         "id":5,
