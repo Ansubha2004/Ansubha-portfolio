@@ -15,10 +15,11 @@ export default function Home() {
             once:false,
             mirror:true
         })
+        AOS.refresh();
     },[])
 
   return (
-    <div className="overflow-hidden ">
+    <div className="overflow-hidden absolute top-0 ">
         <main className=" h-screen w-screen font-[poppins] flex sm:justify-around items-center ">
             <div className="h-auto max-w-[50%]    " id="content">
                 <br/>
@@ -43,7 +44,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="h-auto rounded-[20px]  border-solid border-[3px] border-[#FDF6E3] transition-all duration-500 hover:border-[#fca5a5] active:border-red-300 bg-orange-200  border-box px-[40px]" data-aos="fade" data-aos-delay="1000" id="displaypic">
+            <div className="h-auto rounded-[20px]  border-solid border-[3px] border-[#FDF6E3] transition-all duration-500 hover:border-[#fca5a5]  bg-orange-200  border-box px-[40px]" data-aos="fade" data-aos-delay="1000" id="displaypic">
                 <img className="h-[70vh]  "data-aos="zoom-in-up" data-aos-delay="1500" src={profilepic}/>
             </div>
         </main> 
