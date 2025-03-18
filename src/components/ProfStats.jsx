@@ -1,10 +1,17 @@
 import React from 'react'
+import Profilecard from './Profilecard.jsx'
+import Skills from './Skills.jsx'
+
 
 export default function ProfStats() {
+
+  
+
   return (
-    <div>
-      <main className="h-screen w-screen flex justify-center items-center">
-        <p>Website under progress.....!</p>
+    <div className="absolute top-0">
+      <main className="h-auto w-auto ">
+       <Profilecard  />
+       <Skills />
       </main>
     </div>
   )

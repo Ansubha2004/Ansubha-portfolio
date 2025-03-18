@@ -38,9 +38,9 @@ export default function ContactPage() {
       contactdetails.forEach((data)=>{
          if (data.id==1)
             data.link=linkmap;
+          console.log(data.link)
       })
   }
-  fetchcoordinates()
 
   useEffect(()=>{
     AOS.init({
@@ -50,7 +50,14 @@ export default function ContactPage() {
         
     })
     AOS.refresh();
+    fetchcoordinates();
 },[])
+
+
+  
+  
+
+  
 
 
 
