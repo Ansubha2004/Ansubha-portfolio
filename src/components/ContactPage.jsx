@@ -64,7 +64,7 @@ export default function ContactPage() {
 
   const Connections=[FaLocationDot,SiGmail,FaPhoneAlt];
   const socialmedia=[FaLinkedinIn,FaInstagram,FaGithub];
-  const sociallinks=["https://www.linkedin.com/in/ansubha-dhar-856176296/","https://github.com/Ansubha2004","https://www.instagram.com/rikstar_bro/"]
+  const sociallinks=["https://www.linkedin.com/in/ansubha-dhar-856176296/","https://www.instagram.com/rikstar_bro/","https://github.com/Ansubha2004"]
   
 
   return (

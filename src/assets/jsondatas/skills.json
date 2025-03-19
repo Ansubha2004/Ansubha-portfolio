@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "header":"Full Stack Web Development",
+        "content":"Building dynamic, scalable web applications with seamless front-end and robust back-end integration. Passionate about optimizing performance, security, and user experience across the full stack."
+    },
+    {
+        "id":2,
+        "header":"Competitive Programming",
+        "content":"Breaking down complex problems into efficient solutions using coding logic, algorithms, and DSA to optimize performance. Designing and managing robust databases, ensuring data integrity, query optimization, and efficient data handling."
+    },
+    {
+        "id":3,
+        "header":"Electrical and Electronics",
+        "content":"Designing and simulating efficient circuits for real-world applications. Integrating IoT and electronics to create smart, connected systems."  
+    }
+    
+]
