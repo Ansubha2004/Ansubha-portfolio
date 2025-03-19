@@ -2,17 +2,93 @@
     {
         "id":1,
         "header":"Full Stack Web Development",
-        "content":"Building dynamic, scalable web applications with seamless front-end and robust back-end integration. Passionate about optimizing performance, security, and user experience across the full stack."
+        "content":"Building dynamic, scalable web applications with seamless front-end and robust back-end integration. Passionate about optimizing performance, security, and user experience across the full stack.",
+        "skilldata":[{
+            "skill":"HTML",
+            "level":70
+        },
+        {
+            "skill":"CSS",
+            "level":45
+        },
+        {
+            "skill":"Java Script",
+            "level":40
+        },
+        {
+            "skill":"React",
+            "level":30
+        },
+        {
+            "skill":"Tailwindcss",
+            "level":40
+        },
+        {
+            "skill":"Node.js",
+            "level":10
+        },
+        {
+            "skill":"Express.js",
+            "level":7
+        }]
     },
     {
         "id":2,
         "header":"Competitive Programming",
-        "content":"Breaking down complex problems into efficient solutions using coding logic, algorithms, and DSA to optimize performance. Designing and managing robust databases, ensuring data integrity, query optimization, and efficient data handling."
+        "content":"Breaking down complex problems into efficient solutions using coding logic, algorithms, and DSA to optimize performance. Designing and managing robust databases, ensuring data integrity, query optimization, and efficient data handling.",
+        "skilldata":[{
+            "skill":"Java",
+            "level":43
+        },{
+            "skill":"Python",
+            "level":30
+        },
+        {
+            "skill":"C",
+            "level":20
+        },
+        {
+            "skill":"MySQL",
+            "level":25
+        },
+        {
+            "skill":"DSA",
+            "level":10
+        },
+        {
+            "skill":"OOP",
+            "level":20
+        }
+    ]
     },
     {
         "id":3,
         "header":"Electrical and Electronics",
-        "content":"Designing and simulating efficient circuits for real-world applications. Integrating IoT and electronics to create smart, connected systems."  
+        "content":"Designing and simulating efficient circuits for real-world applications. Integrating IoT and electronics to create smart, connected systems." ,
+        "skilldata":[{
+            "skill":"Arduino",
+            "level":45
+        },{
+            "skill":"Arduino IDE",
+            "level":40
+        },
+        {
+            "skill":"PSpice",
+            "level":30
+        },
+        {
+            "skill":"Matlab",
+            "level":20
+        },
+        {
+            "skill":"Simulink",
+            "level":10
+        },
+        {
+            "skill":"TinkerCAD",
+            "level":50
+        }
+    ]
     }
     
 ]

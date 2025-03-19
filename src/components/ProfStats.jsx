@@ -1,6 +1,8 @@
 import React from 'react'
 import Profilecard from './Profilecard.jsx'
 import Skills from './Skills.jsx'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 export default function ProfStats() {
