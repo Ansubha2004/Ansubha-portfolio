@@ -29,7 +29,7 @@ export default function Skills() {
   
 
   return (
-    <div  className="w-screen h-screen flex flex-col justify-center items-center " >
+    <div  className="w-screen h-screen flex flex-col justify-center items-center overflow-hidden" >
       <p className="text-[50px] text-[#132238] mt-10 font-[600] leading-tight">Skill Statistics</p>
       <p className="text-[#556070] text-[18px]">Electrifying Ideas, Powering the Web.</p>
       <div className="w-screen h-full flex">
@@ -51,7 +51,7 @@ export default function Skills() {
                 <p className="text-[#132238] text-[23px] font-bold leading-normal font-[poppins] group-hover:text-orange-600 group-focus:text-orange-600">
                   {skill.header}
                 </p>
-                <p className="text-[#556070] text-[0.9rem]">{skill.content}</p>
+                <p className="text-[#556070] text-[0.9rem] ">{skill.content}</p>
               </div>
             </div>
           ))}
@@ -63,7 +63,7 @@ export default function Skills() {
               <div key={index} className="overflow-hidden flex h-auto bg-white w-[70%] m-2 rounded-md shadow">
                 <p className="bg-orange-700 w-[30%] text-center text-white p-[15px] text-lg font-semibold">{data.skill}</p>
                 <div className="w-[70%] flex bg-orange-300 box-border p-[4px]">
-                  <div style={{ width: `${data.level}%` }} className={`h-full transition-all duration-1000 delay-300 bg-orange-400`}></div>
+                  <div style={{ width: `${data.level}%` }} className={`h-full transition-all duration-1000 delay-200 bg-orange-400`}></div>
                 </div>
               </div>
             ))

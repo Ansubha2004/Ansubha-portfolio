@@ -4,7 +4,7 @@ import profilepic2 from '../assets/images/profilepic2.png'
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import {Link} from 'react-router-dom'
+
 import { FiDownload } from "react-icons/fi";
 import resume from '../assets/resume.pdf'
 import AOS from 'aos'
@@ -50,7 +50,7 @@ export default function Profilecard() {
             <p className=" text-[#556070] text-[0.9rem]">I am a B.Tech Electrical Engineering undergraduate from the Institute of Engineering and Management with a strong passion for Full-Stack Web Development. I have intermediate expertise in Front-End, Back-End, frameworks, and DBMS, enabling me to build dynamic and efficient web applications. Beyond web development, I am deeply interested in cercuit designing/simulation as well as electronics projects, particularly IoT, sensors. I am committed to mastering my skills through continuous learning, competitive practice, participation in technical events, and collaborating on professional projects to drive innovation.</p>
             <br/>
             <div className="flex space-x-5">
-            <Link to="" className="hover:cursor-pointer hover:text-red-800 font-bold" ><button className="px-[20px]  py-[8px]  rounded-[7px] bg-red-500 text-white transition-all duration-300 linear hover:bg-red-800">My Projects</button></Link>
+            <a href="#projects" className="hover:cursor-pointer hover:text-red-800 font-bold" ><button className="px-[20px]  py-[8px]  rounded-[7px] bg-red-500 text-white transition-all duration-300 linear hover:bg-red-800">My Projects</button></a>
             <a href={resume} target="_blank" className="hover:cursor-pointer hover:border-red-800 font-bold" ><button className="flex space-x-2 justify-center items-center px-[20px]  py-[8px]  rounded-[7px] bg-red-500 text-white transition-all duration-300 linear hover:bg-red-800"><FiDownload className="h-[20px] w-[20px]"/> <p>Download CV</p></button></a>
             </div>
         </div>

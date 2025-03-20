@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",
     "aos": "^2.3.4",
+    "dotenv": "^16.4.7",
     "npx": "^10.2.2",
     "octokit": "^4.1.2",
     "react": "^19.0.0",
