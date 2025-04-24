@@ -1,8 +1,14 @@
 import React,{useState,useRef,useEffect} from 'react'
 import school1 from '../assets/images/school1.png'
 import school2 from '../assets/images/school2.png'
+import school3 from '../assets/images/school3.png'
+import school4 from '../assets/images/school4.png'    
 import college1 from '../assets/images/college1.png'
 import college2 from '../assets/images/college2.png'
+import college3 from '../assets/images/college3.png'
+import college4 from '../assets/images/college4.png'
+import college5 from '../assets/images/college5.png'
+import college6 from '../assets/images/college6.png'
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import { FaSchool } from "react-icons/fa6";
@@ -17,8 +23,8 @@ export default function Education() {
 
   const [index,setIndex]=useState(0);
   const education=[FaSchool,MdSchool];
-   const schoolpics=[school1,school2];
-   const collegepics=[college1,college2];
+   const schoolpics=[school1,school2,school3,school4];
+   const collegepics=[college1,college2,college3,college4,college5,college6];
    const pics=[schoolpics,collegepics];
 
    const [a,seta]=useState(0);
