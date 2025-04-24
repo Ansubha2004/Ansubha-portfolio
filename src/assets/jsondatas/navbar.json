@@ -17,13 +17,9 @@
         "link":"/education"
 
     },
+    
     {
         "id":4,
-        "buttontext":"Service",
-        "link":"/service"
-    },
-    {
-        "id":5,
         "buttontext":"Contact Us",
         "link":"/contactpage"
     }

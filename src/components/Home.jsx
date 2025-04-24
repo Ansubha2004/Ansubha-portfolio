@@ -31,7 +31,7 @@ export default function Home() {
                 <br/><br/><br/>
                 <div className="h-[100px] flex text-[16px] text-[#424E60] ">
                     <div className="w-[250px] flex flex-col justify-center items-center  transition-all duration-200 bg-orange-200 mx-[2px] border-[2px] border-white  hover:border-orange-400" data-aos="zoom-in-right" data-aos-delay="3000">
-                        <p className="text-[2em] font-bold">150+</p>
+                        <p className="text-[2em] font-bold">300+</p>
                         <p className="text-[1rem]">LinkedIn Connections</p>
                     </div>
                     <div className="w-[250px] flex flex-col justify-center items-center  transition-all duration-200 bg-orange-200 mx-[2px] border-[2px] border-white hover:border-orange-400" data-aos="zoom-in-right" data-aos-delay="2500">
