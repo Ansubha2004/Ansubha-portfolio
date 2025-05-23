@@ -19,9 +19,9 @@
     },
     {
         "id":4,
-        "type":"text",
-        "placeholder":"Subject*",
-        "name":"subject"
+        "type":"number",
+        "placeholder":"Mobile number*",
+        "name":"mobile"
     },
     {
         "id":5,
