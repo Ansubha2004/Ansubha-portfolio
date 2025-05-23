@@ -9,13 +9,13 @@ I am currently pursuing my Bachelor of Technology (B.Tech) in Electrical Enginee
 <br>
 <h2>Technologies & Tools</h2>
 
-1. <b>Frontend:</b> React, HTML, CSS, JavaScript, Tailwind CSS 
+1. <b>Frontend:</b> React, JavaScript, Tailwind CSS , toastify
 
-2. <b>Backend:</b> Node.js, Express
+2. <b>Backend:</b> Node.js, Express, Nodemailer
 
-3. <b>Database:</b> MySQL
+3. <b>Database:</b> MongoDB
   
-4. <b>Deployment:</b> Netlify
+4. <b>Deployment:</b> Netlify/Vercel
    
 5. <b>Version Control:</b> Git, GitHub
 
