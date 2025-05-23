@@ -12,7 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios"
 import { ToastContainer } from "react-toastify";
-import {successmessage,errormessaeg} from "../utils/notification.js"
+import {successmessage,errormessage} from "../utils/notification.js"
 
 export default function ContactPage() {
   //fectching location using nominatim api (open street map) and google map api
@@ -105,7 +105,7 @@ export default function ContactPage() {
     }
     catch(err)
     {
-      
+
       console.log("API fetch error",err);
     }
 
