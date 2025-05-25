@@ -10,13 +10,13 @@ const sendmail=async (email,subject,text)=>{
         port:465,//ssl
         secure:true,
         auth:{
-            user:process.env.USERMAIL,
-            pass:process.env.USERPASSWORD
+            user:process.env.USER_EMAIL,
+            pass:process.env.USER_PASS
         }
     })
 
     const mailOptions = {
-        from: process.env.USERMAIL,
+        from: process.env.USER_EMAIL,
         to: email ,
         subject: subject,
         text: text
