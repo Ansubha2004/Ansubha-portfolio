@@ -7,7 +7,7 @@ export const FormValidation=(req,res,next)=>{
             email:joi.string().email().required(),
             organization:joi.string().min(3).max(50).required(),
             mobile: joi.string().length(10).pattern(/^[0-9]+$/).required(),
-            message:joi.string().min(10).max(300).required()
+            message:joi.string().min(3).max(300).required()
         }
     )
     const {error}=schema.validate(req.body);//validating the data
