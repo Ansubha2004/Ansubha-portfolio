@@ -80,7 +80,7 @@ export default function ContactPage() {
   const handlesubmit=async (e)=>{
     e.preventDefault(); //prevemt auto form reloads
     const {name,email,organization,mobile,message}=formdata;
-    if(!name || !email || !organization || !mobile || !message)
+    if(!name.trim() || !email.trim() || !organization.trim() || !mobile.trim() || !message.trim())
     {
       errormessage("Kindly fill all the credentials")
       console.log("Kindliy fill all the credentials")
