@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "type":"text",
+        "placeholder":"Name",
+        "name":"name"
+    },
+    {
+        "id":2,
+        "type":"text",
+        "placeholder":"Email",
+        "name":"email"
+    },
+    {
+        "id":3,
+        "type":"number",
+        "placeholder":"Mobile number*",
+        "name":"mobile"
+    },
+    {
+        "id":4,
+        "type":"text",
+        "placeholder":"Organization*",
+        "name":"organization"
+    },
+    
+    {
+        "id":5,
+        "type":"text",
+        "placeholder":"Message*",
+        "name":"message"
+    }
+]

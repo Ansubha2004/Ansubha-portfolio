@@ -1,0 +1,147 @@
+[
+    {
+        "id": 1,
+        "header": "Frontend",
+        "skilldata": [
+            {
+                "skillname": "React",
+                "level": 70
+            },
+            {
+                "skillname": "Tailwindcss",
+                "level": 79
+            },
+            {
+                "skillname": "HTML",
+                "level": 90
+            },
+            {
+                "skillname": "EJS",
+                "level": 40
+            },
+            {
+                "skillname": "CSS",
+                "level": 86
+            },
+            {
+                "skillname": "Javascript",
+                "level": 65
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "header": "Backend & Database",
+        "skilldata": [
+            {
+                "skillname": "Node js",
+                "level": 40
+            },
+            {
+                "skillname": "Express js",
+                "level": 43
+            },
+            {
+                "skillname": "MongoDB",
+                "level": 39
+            },
+            {
+                "skillname": "MySQL",
+                "level": 15
+            },
+            {
+                "skillname": "Postman",
+                "level": 30
+            }
+            
+        ]
+    },
+    {
+        "id": 3,
+        "header": "Basic Programming",
+        "skilldata": [
+            {
+                "skillname": "Java",
+                "level": 55
+            },
+            {
+                "skillname": "Python",
+                "level": 50
+            },
+            {
+                "skillname": "C",
+                "level": 20
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "header": "Electronics",
+        "skilldata": [
+            {
+                "skillname": "Arduino",
+                "level": 65
+            },
+            {
+                "skillname": "Arduino IDE",
+                "level": 40
+            },
+            {
+                "skillname": "PSpice",
+                "level": 30
+            },
+            {
+                "skillname": "Matlab",
+                "level": 20
+            },
+            {
+                "skillname": "TinkerCAD",
+                "level": 70
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "header": "Tools & Platforms",
+        "skilldata": [
+            {
+                "skillname": "Github",
+                "level": 80
+            },
+            {
+                "skillname": "Vercel",
+                "level": 30
+            },
+            {
+                "skillname": "Render",
+                "level": 40
+            },
+            {
+                "skillname": "Netlify",
+                "level": 50
+            },
+            {
+                "skillname": "VScode",
+                "level": 90
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "header": "Additional",
+        "skilldata": [
+            {
+                "skillname": "Ms Word",
+                "level": 55
+            },
+            {
+                "skillname": "Power Point",
+                "level": 42
+            },
+            {
+                "skillname": "Canva",
+                "level": 23
+            }
+        ]
+    }
+]

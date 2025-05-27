@@ -1,0 +1,44 @@
+body,html{
+  overflow-x:hidden;
+  overscroll-behavior:none;
+  position:relative;
+  font-size:18px;
+}
+#root
+{ 
+  padding: 0px 5% 0px 5%;
+  background-color:#121212;
+  width:100vw;
+  min-height:100vh;
+  user-select:none;
+  position:relative;
+  
+}
+@media (max-width:640px){
+  body,html
+  {
+    font-size:12px
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #FFFFFF11 inset !important; /* Your background color */
+  -webkit-text-fill-color: #fff !important; /* Your text color */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}

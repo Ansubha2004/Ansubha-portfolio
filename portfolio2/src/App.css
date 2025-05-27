@@ -1,0 +1,21 @@
+@import "tailwindcss";
+/* index.css */
+
+/* Optional: custom styles */
+@layer components {
+  .Navlink {
+    @apply text-[#959595]  active:text-[#FD6F00] sm:hover:text-[#FD6F00]   text-[1.1rem] font-[500] cursor-pointer ;
+  }
+  .btn-orange {
+    @apply text-white font-[500] bg-gradient-to-r from-[#FD6F00] to-[#E46400] text-[1.1rem] rounded-[10px] cursor-pointer py-[0.5rem] px-[1.3rem];
+  }
+  .btn-black
+  {
+    @apply text-white py-[0.5rem] text-[1.1rem] border-solid rounded-[10px] border-[2px] border-[#959595] hover:text-[#FD6F00] hover:border-[#FD6F00] active:text-[#FD6F00] active:border-[#FD6F00] cursor-pointer text-[#959595] px-[1.5rem];
+  }
+  .btn-black2
+  {
+    @apply text-white bg-[#FFFFFF20] py-[0.7rem] text-[1.1rem] border-solid rounded-[10px]  focus:bg-[#FD6F00]  cursor-pointer text-[#959595] px-[1.5rem];
+
+  }
+}
