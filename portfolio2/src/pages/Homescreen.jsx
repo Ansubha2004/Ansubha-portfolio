@@ -3,7 +3,6 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import Socialmediaicon from "../components/socialmedia.jsx";
 import Button from "../components/Button.jsx";
 import profilepic from "../assets/images/profilepic.png";
-import { useNavigate } from "react-router-dom";
 
 function Homescreen() {
   const socialMedia = [
@@ -19,12 +18,6 @@ function Homescreen() {
     setTimeout(() => {
       window.open("/resume.pdf", "_blank");
     }, 1000);
-  };
-
-  const navigate = useNavigate();
-
-  const navigatelink = (link) => {
-    navigate(link);
   };
 
   return (
@@ -57,7 +50,13 @@ function Homescreen() {
         <div className="flex space-x-7 mb-10 sm:mb-[60px]">
           <Button
             content="Contact Us"
-            handleClick={()=>navigatelink("/#Contact")}
+            handleClick={() => {
+              const section = document.getElementById("Contact");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            
             themecss="btn-orange"
           />
           <Button

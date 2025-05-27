@@ -21,27 +21,67 @@ function Footer() {
       <img src={logo} className="object-contain w-[30%] sm:w-[15%]" alt="" />
       <ul className="sm:w-[55%] w-full  flex justify-around  my-5 items-center  bg-transparent  ">
         <li className="transform active:scale-[0.9] ">
-          <a href="#Home" className={clsx("Navlink ")}>
+          <a
+            onClick={() => {
+              const section = document.getElementById("Home");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className={clsx("Navlink ")}
+          >
             Home
           </a>
         </li>
         <li className="transform active:scale-[0.9] ">
-          <a href="#About" className={clsx("Navlink")}>
+          <a
+            onClick={() => {
+              const section = document.getElementById("About");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className={clsx("Navlink")}
+          >
             About Me
           </a>
         </li>
         <li className="transform active:scale-[0.9] ">
-          <a href="#Skills" className={clsx("Navlink")}>
+          <a
+            onClick={() => {
+              const section = document.getElementById("Skills");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className={clsx("Navlink")}
+          >
             Skills
           </a>
         </li>
         <li className="transform active:scale-[0.9] ">
-          <a href="#Projects" className={clsx("Navlink")}>
+          <a
+            onClick={() => {
+              const section = document.getElementById("Projects");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className={clsx("Navlink")}
+          >
             Projects
           </a>
         </li>
         <li className="transform active:scale-[0.9] ">
-          <a href="#Contact" className={clsx("Navlink")}>
+          <a
+            onClick={() => {
+              const section = document.getElementById("Contact");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className={clsx("Navlink")}
+          >
             Contact Me
           </a>
         </li>
@@ -51,17 +91,25 @@ function Footer() {
           <Socialmediaicon key={index} Component={Icon.comp} href={Icon.href} />
         ))}
       </div>
-      <div className="w-full flex sm:flex-row flex-col justify-center items-center text-[#959595] sm:gap-7 gap-2" >
-        <a href="mailto:ansubhadhar2012@gmail.com" className="font-[500] text-[1.1rem] flex items-center hover:text-orange-500 active:text-[orange]-500 transition-all duration-100 linear active:scale-[0.9] space-x-3 ">
+      <div className="w-full flex sm:flex-row flex-col justify-center items-center text-[#959595] sm:gap-7 gap-2">
+        <a
+          href="mailto:ansubhadhar2012@gmail.com"
+          className="font-[500] text-[1.1rem] flex items-center hover:text-orange-500 active:text-[orange]-500 transition-all duration-100 linear active:scale-[0.9] space-x-3 "
+        >
           <img src={mail} alt="" className="object-contain w-7 " />
           <p>ansubhadhar2012@gmail.com</p>
         </a>
-        <a href="tel:+917439865604" className="font-[500] text-[1.1rem] flex items-center hover:text-orange-500 active:text-[orange]-500 transition-all duration-100 linear active:scale-[0.9] space-x-3 ">
+        <a
+          href="tel:+917439865604"
+          className="font-[500] text-[1.1rem] flex items-center hover:text-orange-500 active:text-[orange]-500 transition-all duration-100 linear active:scale-[0.9] space-x-3 "
+        >
           <img src={phone} alt="" className="object-contain w-7 " />
           <p>+91 7439865604</p>
         </a>
       </div>
-      <p className="w-full sm:w-[55%] text-center mt-10 pt-3 border-solid text-[#959595] border-t-[1px]">Developed by @Ansubha Dhar</p>
+      <p className="w-full sm:w-[55%] text-center mt-10 pt-3 border-solid text-[#959595] border-t-[1px]">
+        Developed by @Ansubha Dhar
+      </p>
     </div>
   );
 }
