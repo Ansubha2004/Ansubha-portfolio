@@ -44,6 +44,7 @@ function Contact() {
           headers: {
             "Content-Type": "application/json",
           },
+          credentials:true
         }
       );
       const { success, message, error } = response.data;
