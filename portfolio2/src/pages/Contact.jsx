@@ -92,11 +92,14 @@ function Contact() {
         </p>
       </div>
       <div className="w-full sm:w-1/2 my-10 ">
-        <form onSubmit={handlesubmit} className="flex flex-col items-center  ">
+        <form
+          data-aos="zoom-in-up"
+          data-aos-delay={500}
+          onSubmit={handlesubmit}
+          className="flex flex-col items-center  "
+        >
           {form.map((data, index) => (
             <input
-              data-aos="fade-right"
-              data-aos-delay={index * 200 + 600}
               onChange={handlechange}
               key={data.id}
               type={data.type}
@@ -107,12 +110,7 @@ function Contact() {
             />
           ))}
 
-          <Button
-            content="Submit"
-            type="submit"
-            themecss="btn-black mt-3"
-            
-          />
+          <Button content="Submit" type="submit" themecss="btn-black mt-3" />
         </form>
       </div>
       <ToastContainer />

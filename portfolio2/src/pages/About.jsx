@@ -34,11 +34,11 @@ function About() {
           MERN Developer | Electrical Undergraduate | IEM, Kolkata
         </p>
       </div>
-      <div className="text-center space-y-8">
+      <div className="text-center flex flex-col items-center space-y-8">
         <p
           data-aos="fade"
           data-aos-delay="700"
-          className="text-white text-[1.2rem] sm:text-[1.7rem] font-[500] mt-10  text-justify"
+          className="w-full sm:w-[80%] text-white text-[1.2rem] font-[500] mt-10  text-justify"
         >
           I'm a passionate MERN stack developer with a strong focus on building
           dynamic and responsive web applications. Currently pursuing a B.Tech
