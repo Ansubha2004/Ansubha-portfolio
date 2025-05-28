@@ -30,3 +30,8 @@ body,html{
   -ms-overflow-style: none; /* IE/Edge */
   scrollbar-width: none; /* Firefox */
 }
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #FFFFFF12 inset !important; /* your dark background color */
+  -webkit-text-fill-color: white !important;         /* text color to match */
+  transition: background-color 9999s ease-in-out 0s;
+}

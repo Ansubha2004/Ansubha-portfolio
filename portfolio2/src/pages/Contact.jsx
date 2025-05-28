@@ -103,10 +103,13 @@ function Contact() {
               onChange={handlechange}
               key={data.id}
               type={data.type}
-              className="h-[50px] outline-none   w-full  border-box px-7 mb-7 rounded-[7px] text-white placeholder-[#959595] bg-[#FFFFFF12]"
+              className="h-[50px] outline-none  w-full  border-box px-7 mb-7 rounded-[7px] text-white placeholder-[#959595] bg-[#FFFFFF12]"
               name={data.name}
               placeholder={data.placeholder}
               value={formdata[data.name]}
+              autoComplete="off"
+              autoCorrect="off"
+              spellCheck="false"
             />
           ))}
 
