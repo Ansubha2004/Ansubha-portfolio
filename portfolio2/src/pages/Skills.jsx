@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "../components/Button.jsx";
 import skills from "../data/skills.json";
-import Skillchart from "../hooks/skillchart.jsx";
+import Skillchart from "../components/skillchart.jsx";
 
 function Skills() {
   const [globalindex, setglobalindex] = useState(0);
