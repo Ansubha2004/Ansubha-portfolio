@@ -4,8 +4,10 @@ import Button from "../components/Button.jsx";
 import axios from "axios";
 import { ToastContainer } from "react-toastify";
 import { successmessage, errormessage } from "../utils/notification.js";
+import useAOS from "../hooks/useAOS.jsx";
 
 function Contact() {
+  useAOS();
   //form handling
 
   const [formdata, setformdata] = useState({
@@ -43,7 +45,7 @@ function Contact() {
         {
           headers: {
             "Content-Type": "application/json",
-          }
+          },
         }
       );
       const { success, message, error } = response.data;
@@ -69,14 +71,23 @@ function Contact() {
   };
 
   return (
-
     <div
       id="Contact"
-      className="w-full h-auto border-box sm:pb-[40px] pb-[60px]   scroll-mt-[130px]  flex flex-col items-center "
+      className="w-full h-auto border-box sm:pb-[40px] pb-[60px]   scroll-mt-[120px]  flex flex-col items-center "
     >
       <div className="text-center">
-        <p className="text-white font-bold text-[3rem] ">Contact Me</p>
-        <p className="text-orange-500 text-[1rem] font-[700] sm:text-[1.2rem]">
+        <p
+          data-aos="zoom-in-up"
+          data-aos-delay="100"
+          className="text-white font-bold text-[3rem] "
+        >
+          Contact Me
+        </p>
+        <p
+          data-aos="zoom-in-up"
+          data-aos-delay="300"
+          className="text-orange-500 text-[1rem] font-[700] sm:text-[1.2rem]"
+        >
           Let's Build Something Great Together
         </p>
       </div>
@@ -84,6 +95,8 @@ function Contact() {
         <form onSubmit={handlesubmit} className="flex flex-col items-center  ">
           {form.map((data, index) => (
             <input
+              data-aos="fade-right"
+              data-aos-delay={index * 200 + 600}
               onChange={handlechange}
               key={data.id}
               type={data.type}
@@ -94,7 +107,12 @@ function Contact() {
             />
           ))}
 
-          <Button content="Submit " type="submit" themecss="btn-black mt-3" />
+          <Button
+            content="Submit"
+            type="submit"
+            themecss="btn-black mt-3"
+            
+          />
         </form>
       </div>
       <ToastContainer />

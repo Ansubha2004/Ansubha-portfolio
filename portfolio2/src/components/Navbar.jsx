@@ -20,7 +20,11 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed  flex justify-between items-center w-[90%] z-[2] h-[80px] sm:h-[100px] pt-1 backdrop-blur-lg  bg-[#121212]/80">
+    <nav
+      data-aos="fade"
+      data-aos-delay="300"
+      className="fixed  flex justify-between items-center w-[90%] z-[2] h-[80px] sm:h-[100px] pt-1 backdrop-blur-lg  bg-[#121212]/80"
+    >
       <img src={logo} className="object-contain h-[45%] sm:h-[60%]" />
       <ul
         ref={navRef}
