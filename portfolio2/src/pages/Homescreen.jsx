@@ -39,7 +39,7 @@ function Homescreen() {
           data-aos-mirror="true"
           className="text-[#707070] text-[1.3rem] sm:text-[1.5rem] "
         >
-          Hi! I am
+          Hi viewers!
         </p>
         <p
           data-aos="fade-right"
@@ -48,7 +48,7 @@ function Homescreen() {
           data-aos-mirror="true"
           className="text-[#959595] text-[1.4rem] sm:text-[1.6rem] font-[500]"
         >
-          ANSUBHA DHAR
+          Welcome to my Portfolio, I am
         </p>
         <p
           data-aos="fade-right"
@@ -57,7 +57,7 @@ function Homescreen() {
           data-aos-mirror="true"
           className=" sm:text-[3.9rem] mt-2 sm:mt-0 mb-3  text-[3.2rem] bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] text-transparent bg-clip-text font-[900]"
         >
-          WEB DEVELOPER
+          ANSUBHA DHAR
         </p>
         <div
           data-aos="fade-up"
