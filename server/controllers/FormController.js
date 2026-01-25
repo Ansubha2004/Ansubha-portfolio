@@ -4,8 +4,8 @@ import sendmail from "../utils/mailer.js"
 
 export const formdatasubmission=async (req,res)=>{
     try{
-        const {name,email,organization,mobile,message}=req.body;
-        if(!name || !email || !organization || !mobile || !message)
+        const {name,email,subject,message}=req.body;
+        if(!name || !email || !subject || !message)
         {
             return res.json(
                 {
@@ -16,11 +16,10 @@ export const formdatasubmission=async (req,res)=>{
         const createdata=await clientmodel.create({
             name,
             email,
-            organization,
-            mobile,
+            subject,
             message
         })
-        sendmail(createdata.email,"Thank You, "+createdata.name+" for contacting ",`Dear ${createdata.name},\n\nThank you for reaching out through my portfolio. I’ve received your message and appreciate your interest in my work. I’ll review your message and get back to you as soon as possible. \nIn the meantime, here’s a quick summary of what you submitted:\n\n - Name: ${createdata.name}\n- Email: ${createdata.email}\n- Organization: ${createdata.organization}\n- Mobile: ${createdata.mobile}\n- Message: ${createdata.message}\n\nIf there’s anything else you’d like to add or discuss, feel free to reply directly to this email.Looking forward to connecting with you soon!\n\nWarm regards,\nAnsubha Dhar\n`)
+        sendmail(createdata.email,"Thank You, "+createdata.name+" for contacting ",`Dear ${createdata.name},\n\nThank you for reaching out through my portfolio. I’ve received your message and appreciate your interest in my work. I’ll review your message and get back to you as soon as possible. \nIn the meantime, here’s a quick summary of what you submitted:\n\n - Name: ${createdata.name}\n- Email: ${createdata.email}\n- Message: ${createdata.message}\n\nIf there’s anything else you’d like to add or discuss, feel free to reply directly to this email.Looking forward to connecting with you soon!\n\nWarm regards,\nAnsubha Dhar\n`)
         return res.json({
             success:true,
             message:"Form submission successfull",

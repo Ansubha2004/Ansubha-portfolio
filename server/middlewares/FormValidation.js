@@ -5,8 +5,7 @@ export const FormValidation=(req,res,next)=>{
         {
             name:joi.string().min(3).max(100).required(),
             email:joi.string().email().required(),
-            organization:joi.string().min(3).max(50).required(),
-            mobile: joi.string().length(10).pattern(/^[0-9]+$/).required(),
+            subject:joi.string().min(3).max(100).required(),
             message:joi.string().min(3).max(300).required()
         }
     )

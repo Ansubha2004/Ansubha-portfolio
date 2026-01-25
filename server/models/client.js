@@ -10,14 +10,11 @@ const clientSchema= new mongoose.Schema({
         type:String,
         required:true
     },
-    organization:{
+    subject:{
         type:String,
         required:true
     },
-    mobile:{
-        type:String,
-        required:true
-    },
+
     message:{
         type:String,
         required:true

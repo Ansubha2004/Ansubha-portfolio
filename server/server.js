@@ -15,7 +15,7 @@ app.use(
         'http://localhost:5173', // for local dev
         'https://ansubha-portfolio-official.vercel.app' // for production frontend
       ],
-      methods: ['POST'], // adjust as needed
+      methods: ['POST','GET','PUT','DELETE'], // adjust as needed
     credentials: true,
   })
 );

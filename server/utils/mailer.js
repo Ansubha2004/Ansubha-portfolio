@@ -2,18 +2,19 @@ import nodemailer from "nodemailer"
 import dotenv from "dotenv"
 dotenv.config()
 
+const transporter=nodemailer.createTransport({
+    host:"smtp.gmail.com",
+    port:465,//ssl
+    secure:true,
+    auth:{
+        user:process.env.USER_EMAIL,
+        pass:process.env.USER_PASS
+    }
+})
 
 
 const sendmail=async (email,subject,text)=>{
-    const transporter=nodemailer.createTransport({
-        host:"smtp.gmail.com",
-        port:465,//ssl
-        secure:true,
-        auth:{
-            user:process.env.USER_EMAIL,
-            pass:process.env.USER_PASS
-        }
-    })
+    
 
     const mailOptions = {
         from: process.env.USER_EMAIL,
@@ -22,7 +23,7 @@ const sendmail=async (email,subject,text)=>{
         text: text
     }
     await transporter.sendMail(mailOptions,(err,info)=>{
-        if(error)
+        if(err)
         {
             console.log("Error sending mail")
         }
