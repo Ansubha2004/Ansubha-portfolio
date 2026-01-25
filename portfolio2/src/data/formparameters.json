@@ -13,19 +13,13 @@
     },
     {
         "id":3,
-        "type":"number",
-        "placeholder":"Mobile number*",
-        "name":"mobile"
-    },
-    {
-        "id":4,
         "type":"text",
-        "placeholder":"Organization*",
-        "name":"organization"
+        "placeholder":"Subject*",
+        "name":"subject"
     },
     
     {
-        "id":5,
+        "id":4,
         "type":"text",
         "placeholder":"Message*",
         "name":"message"

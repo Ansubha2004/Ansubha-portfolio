@@ -13,8 +13,7 @@ function Contact() {
   const [formdata, setformdata] = useState({
     name: "",
     email: "",
-    organization: "",
-    mobile: "",
+    subject:"",
     message: "",
   });
 
@@ -27,12 +26,11 @@ function Contact() {
   };
   const handlesubmit = async (e) => {
     e.preventDefault(); //prevemt auto form reloads
-    const { name, email, organization, mobile, message } = formdata;
+    const { name, email, subject, message } = formdata;
     if (
       !name.trim() ||
       !email.trim() ||
-      !organization.trim() ||
-      !mobile.trim() ||
+      !subject.trim() ||
       !message.trim()
     ) {
       errormessage("Kindly fill all the credentials");
@@ -56,8 +54,7 @@ function Contact() {
         setformdata({
           name: "",
           email: "",
-          organization: "",
-          mobile: "",
+          subject:"",
           message: "",
         });
       }
