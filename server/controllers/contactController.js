@@ -1,4 +1,5 @@
 import contactmodel from "../models/contact.js"
+import {SendMail} from "../utils/email.js"
 
 
 export const submitform=async (req,res)=>{
@@ -14,6 +15,7 @@ export const submitform=async (req,res)=>{
         const createdata=await contactmodel.create({
             name,email,subject,message
         })
+        SendMail(name,email,subject,message);
         return res.json({
             success:true,
             message:"contact enquiry submiited",
