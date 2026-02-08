@@ -37,8 +37,7 @@ function Contact() {
       console.log("Kindliy fill all the credentials");
     }
     try {
-      const response = await axios.post(
-        "http://localhost:5900/api/contact",
+      const response = await axios.post("https://ansubha-portfolio1.onrender.com/api/contact",
         formdata,
         {
           headers: {
