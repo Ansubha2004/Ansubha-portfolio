@@ -1,8 +1,15 @@
-body,html{
-  overflow-x:hidden;
-  overscroll-behavior:none;
-  position:relative;
-  font-size:18px;
+html {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  font-size: 18px;
+  touch-action: pan-y;
 }
 #root
 { 
